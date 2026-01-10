@@ -4,15 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-B0ywBrVI.css">
+    <title>Таймер</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-DRBXA5vM.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CK8CL8qG.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DZnD1BIV.css">
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">На главную</a>
         <h1 class="main-title">Таймер</h1>
+        <div class="timer-controls">
+          <input type="text" id="datetime-picker" />
+          <button type="button" data-start disabled>Старт</button>
+        </div>
+
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Дней</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Часов</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Минут</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Секунд</span>
+          </div>
+        </div>
       </div>
     </main>
   </body>
