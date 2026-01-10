@@ -4,18 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Генератор промисов</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">На главную</a>
-        <h1 class="main-title">Снекбар</h1>
+
+        <h1 class="main-title">Генератор промисов</h1>
+        <form class="form">
+          <label class="form__label">
+            Delay (ms)
+            <input class="form__input" type="number" name="delay" required />
+          </label>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">State</legend>
+            <label class="form__radio-label">
+              <input
+                class="form__radio"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="form__radio-label">
+              <input
+                class="form__radio"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button class="form__button" type="submit">
+            Create notification
+          </button>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
       </div>
     </main>
 
-    <!-- <load src="./partials/footer.html" /> -->
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>

@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Домашка 10. Главная</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <main class="main">
       <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
-                >Таймер</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
-                >Снекбар</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <h1 class="main-title">Добро пожаловать!</h1>
+        <p class="main-subtitle">Выбери инструмент:</p>
 
-    <main></main>
+        <div class="cards">
+          <a href="./1-timer.html" class="card">
+            <h2>Таймер</h2>
+            <p>Отслеживай время красиво и удобно</p>
+          </a>
+
+          <a href="./2-snackbar.html" class="card">
+            <h2>Генератор промисов</h2>
+            <p>Создавай промисы и наблюдай за результатами</p>
+          </a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
